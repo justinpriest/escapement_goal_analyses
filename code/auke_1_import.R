@@ -4,7 +4,7 @@ library(readxl)
 
 source("code/1_functions.R")
 
-auketotalrun <- read_csv("data/auke_escapement&harvest_1980-2022.csv") %>%
+auketotalrun <- read_csv("data/auke_escapement&harvest_1980-2023.csv") %>%
   dplyr::select(Location, Year, Escapement_Adult, TagsFound_Adult, 
                 TagsFound_Jack, RunCaught_WEIR_NOEXP, RunCaught_THETAEXP) %>%
   # NEED TO UPDATE JACK ESC

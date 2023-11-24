@@ -6,6 +6,15 @@
 source("code/auke_1_import.R")
 
 
+# Decision summary for this script
+#   - jacks vs no jacks: no jacks
+#   - Year range: >1980
+#   - Account for productivity?: No
+#   - Theta or weir counts: theta
+#   - Smolt:smolt SR?: No 
+
+
+
 aukereturns <- aukebrood_nojacks %>%
   group_by(year) %>%
   summarise(samplecount = sum(agecount)) %>%
